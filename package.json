@@ -1,0 +1,31 @@
+{
+  "name": "mimosa-copy",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dbashford/mimosa-copy",
+  "author": "David Bashford",
+  "description": "A generic copy 'compiler' for Mimosa 2.0+",
+  "contributors": [
+    {
+      "name": "David Bashford",
+      "email": "dbashford@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbashford/mimosa-copy"
+  },
+  "keywords": [
+    "mimosa",
+    "mmodule",
+    "copy",
+    "compiler"
+  ],
+  "dependencies": {
+    "logmimosa": "0.6.0"
+  },
+  "license": "MIT",
+  "main": "./src",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
