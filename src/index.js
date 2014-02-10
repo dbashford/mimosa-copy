@@ -17,12 +17,12 @@ var compile = function ( mimosaConfig, options, next ) {
 
   options.files.forEach( function ( file ) {
     if ( c && c.excludeRegex && file.inputFileName.match( c.excludeRegex ) ) {
-      if ( logger.isDebug ) {
+      if ( logger.isDebug() ) {
         logger.debug( "skipping copy file [[ " + file.inputFileName + " ]], file is excluded via regex" );
       }
     } else {
       if ( c.exclude.indexOf(file.inputFileName) > -1 ) {
-        if ( logger.isDebug ) {
+        if ( logger.isDebug() ) {
           logger.debug( "skipping copy file [[ " + file.inputFileName + " ]], file is excluded via string path" );
         }
       } else {
