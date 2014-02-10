@@ -1,7 +1,5 @@
 "use strict";
 
-var logger = require( 'logmimosa' );
-
 exports.defaults = function() {
   return {
     copy: {
