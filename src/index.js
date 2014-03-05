@@ -1,7 +1,7 @@
 "use strict";
 
 var logger = null
-  , config = require( './config' )
+  , config = require( "./config" )
   , getExtensions = function ( mimosaConfig ) {
     logger = mimosaConfig.log;
     return mimosaConfig.copy.extensions;
