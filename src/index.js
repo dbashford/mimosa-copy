@@ -13,24 +13,22 @@ var compile = function ( mimosaConfig, options, next ) {
     var c = mimosaConfig.copy;
 
     options.files.forEach( function ( file ) {
+      var inputFile = file.inputFileName;
+
       if ( file.outputFileText ) {
         if ( logger.isDebug() ) {
-          logger.debug( "skipping copy file [[ " + file.inputFileName + " ]], file aleady has output text." );
+          logger.debug( "skipping copy file [[ " + inputFile + " ]], file aleady has output text." );
+        }
+      } else if ( c && c.excludeRegex && inputFile.match( c.excludeRegex ) ) {
+        if ( logger.isDebug() ) {
+          logger.debug( "skipping copy file [[ " + inputFile + " ]], file is excluded via regex" );
+        }
+      } else if ( c.exclude.indexOf( inputFile ) > -1 ) {
+        if ( logger.isDebug() ) {
+          logger.debug( "skipping copy file [[ " + inputFile + " ]], file is excluded via string path" );
         }
       } else {
-        if ( c && c.excludeRegex && file.inputFileName.match( c.excludeRegex ) ) {
-          if ( logger.isDebug() ) {
-            logger.debug( "skipping copy file [[ " + file.inputFileName + " ]], file is excluded via regex" );
-          }
-        } else {
-          if ( c.exclude.indexOf(file.inputFileName) > -1 ) {
-            if ( logger.isDebug() ) {
-              logger.debug( "skipping copy file [[ " + file.inputFileName + " ]], file is excluded via string path" );
-            }
-          } else {
-            file.outputFileText = file.inputFileText;
-          }
-        }
+        file.outputFileText = file.inputFileText;
       }
     });
   }
