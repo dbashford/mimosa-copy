@@ -1,7 +1,7 @@
 mimosa-copy
 ===========
 
-This is a Mimosa file copying "compiler". It copyies files from a Mimosa project's source directory to its output directory.
+This is a Mimosa file copying "compiler". It copies files from a Mimosa project's source directory to its output directory.
 
 For more information regarding Mimosa, see http://mimosa.io.
 
