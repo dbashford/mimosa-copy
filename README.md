@@ -16,12 +16,12 @@ This is a generic file copier for the Mimosa build tool serves as the "compiler"
 ```javascript
 copy: {
   extensions:
-    ["js",  "css", "png", "jpg",
-     "jpeg","gif", "html","eot",
-     "svg", "ttf", "woff","otf",
-     "yaml","kml", "ico", "htc",
-     "htm", "json","txt", "xml",
-     "xsd", "map", "md",  "mp4"],
+    ["jpeg","gif", "html","php",
+     "eot", "svg", "ttf", "woff",
+     "otf", "yaml","kml", "ico",
+     "htc", "htm", "json","txt",
+     "xml", "xsd", "map", "md",
+     "mp4"],
   exclude:[]
 }
 ````
