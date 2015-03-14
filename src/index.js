@@ -42,6 +42,5 @@ module.exports = {
   compile: compile,
   extensions: getExtensions,
   defaults: config.defaults,
-  placeholder: config.placeholder,
   validate: config.validate
 };
