@@ -3,7 +3,7 @@
 exports.defaults = function() {
   return {
     copy: {
-      extensions: ["js","css","png","jpg","jpeg","gif","html","php","eot","svg","ttf","woff","woff2","otf","yaml","kml","ico","htc","htm","json","txt","xml","xsd","map","md","mp4","mp3","swf"],
+      extensions: ["js","css","png","jpg","jpeg","gif","html","php","eot","svg","ttf","woff","woff2","otf","yaml","kml","ico","htc","htm","json","txt","xml","xsd","map","md","mp4","mp3","swf","apng","mng","phtml","volt"],
       exclude: []
     }
   };

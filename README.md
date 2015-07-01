@@ -22,7 +22,8 @@ copy: {
      "otf", "yaml","kml", "ico",
      "htc", "htm", "json","txt",
      "xml", "xsd", "map", "md",
-     "mp4"],
+     "mp4", "apng", "mng", "phtml",
+     "volt"],
   exclude:[]
 }
 ````
